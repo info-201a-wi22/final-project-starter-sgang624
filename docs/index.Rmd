@@ -1,7 +1,7 @@
 ---
 title: "Your Project Title"
-author: "project team members"
-date: "1/22/2022"
+author: "Suraj Gangaram, Sumaya Mohamud, Victoria Mulugeta, Duy Nguyen, Mike Ramsay" "sgang624@uw.edu, smoham2@uw.edu, vmulu1@uw.edu, dnh7@uw.edu, mramsay2@uw.edu
+Date: "2/18/2022"
 output: html_document
 ---
 
