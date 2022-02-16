@@ -5,11 +5,9 @@ In our project, we use the following data files and Application Programming Inte
 ### Data files (TODO: Update/delete)
 |Data File Name | Brief Description|
 |---------------| -----------------|
-|[example.cvs](./example.csv) | This file contains temperature data. (See report for details.)
-|[another-file](./filename2.csv) | Description ...
 |[HPI_CrimeRate.csv](./HPI_CrimeRate.csv) | This file contains the merged housing price index and crime rate data.
 |[FHFA.csv](./FHFA.csv) | This file contains the housing price index data.
-|[Marshall_Project.csv](./Marshall_Project.csv) | This file contains the crime rate data from the FHFA. 
+|[Marshall_Project.csv](./Marshall_Project.csv) | This file contains the crime rate data from the FHFA.
 
 ### Application Programming Interfaces (API) (TODO: Update/delete)
 
