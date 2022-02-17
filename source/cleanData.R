@@ -7,11 +7,12 @@
 # repository is stored.
 #----------------------------------------------------------------------------#
 library(tidyverse)
-# setwd("~/Documents/INFO201/final-project-starter-sgang624")
-hpi_crime_raw <- read.csv("../data/HPI_CrimeRate.csv")
+setwd("~/Documents/INFO201/final-project-starter-sgang624")
+hpi_crime_raw <- read.csv("data/HPI_CrimeRate.csv")
 clean_data <- function(data){
   clean <- data %>% 
     filter(Year != "")
   return(clean)
 }
 hpi_crime_clean <- clean_data(hpi_crime_raw)
+?getwd

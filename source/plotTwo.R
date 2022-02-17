@@ -1,5 +1,5 @@
 source("source/cleanData.r")
-library("plotly")
+library(plotly)
 crime_type <- c('Homicides', 'Rapes', 'Assaults', 'Robberies')
 
 plotTwoData <- hpi_crime_clean %>% 
@@ -12,8 +12,7 @@ plotTwoData <- hpi_crime_clean %>%
                (sum(Robberies, na.rm = TRUE) / sum(Violent.Crimes, na.rm = TRUE)) * 100)
   )
 
-f <- ggplot(plotTwoData, aes(x="Violet Crimes For HPI under 110", y = round(percentage, 2), fill=group)) +
+plotTwo <- ggplot(plotTwoData, aes(x="Violet Crimes For HPI under 110", y = round(percentage, 2), fill=group)) +
   geom_bar(stat="identity", width=1) +
   ylab("Percentage of Major Crime")
-ggplotly(f)
 
