@@ -1,6 +1,10 @@
 ---
 title: "Your Project Title"
+<<<<<<< HEAD
 author: "Suraj Gangaram, Sumaya Mohamud, Victoria Mulugeta, Duy Nguyen, Mike Ramsay sgang624@uw.edu, smoham2@uw.edu, vmulu1@uw.edu, dnh7@uw.edu, mramsay2@uw.edu"
+=======
+authors: "Suraj Gangaram, Sumaya Mohamud, Victoria Mulugeta, Duy Nguyen, Mike Ramsay sgang624@uw.edu, smoham2@uw.edu, vmulu1@uw.edu, dnh7@uw.edu, mramsay2@uw.edu"
+>>>>>>> 53a11279e04c5f9ee347f37007caa62fed965e46
 Date: "2/18/2022"
 output: html_document
 ---
