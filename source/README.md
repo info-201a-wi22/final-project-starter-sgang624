@@ -5,8 +5,14 @@ these sub-directories (TODO: Update/Delete)
 
 |Source Directories | Brief Description|
 |---------------| -----------------|
-|[xxx](./xxx) | Description ... 
-|[xxx](./xxx) | Description ... 
+|[cleanData.R](./cleanData.R) | Cleaned up dataset. 
+|[data_access.R](./data_access.R) | Used to source files. 
+|[summaryInfo.R](./summaryInfo.R) | Contains a summary of our dataset. 
+|[summaryInfoTable.R](./summaryInfoTable.R) | Contains some summary information about our dataset in the form of a table.
+|[plotOne.R](./plotOne.R) | Contains code for our scatterplot, comparing Housing Price Index vs Violent Crime Rate. 
+|[plotTwo.R](./plotTwo.R) | Contains code for our stacked bar chart, displaying percentage of major crimes for Housing Price Index under 110.
+|[plotThree.R](./plotThree.R) | Contains code for our boxplot, comparing crime percentage at different Housing Price Index groups. 
+|[plotFour.R](./plotFour.R) | Contains code for our bar chart, comparing Violent Crime trends over the Years. 
 
 
 
