@@ -1,6 +1,5 @@
 source("source/cleanData.r")
 library("plotly")
-<<<<<<< HEAD
 
 plotThreeData <- hpi_crime_clean %>%
   mutate(HPI_group = case_when(
@@ -23,5 +22,3 @@ ggplot(plotThreeData, aes(x= , y = )) +
   )
 ggplotly()
 
-=======
->>>>>>> refs/remotes/origin/main
