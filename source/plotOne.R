@@ -1,5 +1,5 @@
 source("source/cleanData.R")
-
+library(plotly)
 plotOnedata <- hpi_crime_clean %>%
   mutate(VCR = (Violent.Crimes/Population)) 
 
@@ -12,5 +12,4 @@ plotOne <- ggplot(data = plotOnedata) +
     y = "Violent Crime Rate"
   )
 
-ggplotly(plotOne)
 
