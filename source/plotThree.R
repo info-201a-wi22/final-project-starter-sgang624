@@ -6,19 +6,15 @@ plotThreeData <- hpi_crime_clean %>%
     between(index_nsa, 20, 141) ~ "Low",
     between(index_nsa, 142, 261) ~ "Medium",
     between(index_nsa, 262, 386) ~ "High",
-    TRUE ~ NA_character_
+    FALSE ~ NA_character_
   )) %>%
-  select(HPI_group, Violent.Crimes)
-x
+  mutate(crime_percentage = (Violent.Crimes / Population) * 100) %>%
+  select(HPI_group, crime_percentage)
+
 View(plotThreeData)
 
+plotThree <- ggplot(plotThreeData, aes(x= HPI_group, y = crime_percentage, fill = HPI_group)) +
+  geom_boxplot(na.rm = TRUE)
 
-ggplot(plotThreeData, aes(x= , y = )) +
-  geom_bar(stat="", width=) +
-  labs(
-    title = "",
-    x = "",
-    y = ""
-  )
-ggplotly()
+ggplotly(plotThree)
 

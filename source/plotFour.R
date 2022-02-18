@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> e41dc22c22719a40635b8ec49d064df6b424ca40
 source("source/cleanData.R")
 library(plotly)
 
@@ -27,3 +30,9 @@ ggplot(data = plotFourData) +
     y = "Violent Crime "
   )
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> e41dc22c22719a40635b8ec49d064df6b424ca40
