@@ -7,7 +7,7 @@
 # repository is stored.
 #----------------------------------------------------------------------------#
 library(tidyverse)
-setwd("~/Documents/INFO201CODE/final-project-starter-sgang624")
+# setwd("~/Documents/INFO201/final-project-starter-sgang624")
 hpi_crime_raw <- read.csv("data/HPI_CrimeRate.csv")
 clean_data <- function(data){
   clean <- data %>% 
