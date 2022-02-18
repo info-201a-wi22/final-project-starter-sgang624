@@ -11,10 +11,8 @@ plotThreeData <- hpi_crime_clean %>%
   mutate(crime_percentage = (Violent.Crimes / Population) * 100) %>%
   select(HPI_group, crime_percentage)
 
-View(plotThreeData)
 
 plotThree <- ggplot(plotThreeData, aes(x= HPI_group, y = crime_percentage, fill = HPI_group)) +
   geom_boxplot(na.rm = TRUE)
 
-ggplotly(plotThree)
 

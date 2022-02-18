@@ -27,19 +27,8 @@ plotHigh <- ggplot(data = plotFourDataHigh) +
     y = "Violent Crime "
   ) 
 
-ggplotly(plotLow)
-
-ggplotly(plotHigh)
 
 
 
 
-#No Work
-p <- plotFourData %>%
-  #filter( price<300 ) %>%
-  ggplot(aes(x=Year)) +
-  geom_histogram( binwidth=1, fill="#69b3a2", color="#e9ecef", alpha=0.9) +
-  ggtitle("Violent Crimes by Year") 
-
-ggplotly(p)
 
