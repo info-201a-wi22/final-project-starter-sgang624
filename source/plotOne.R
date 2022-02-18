@@ -1,7 +1,8 @@
 source("source/cleanData.R")
 library("plotly")
 plotOnedata <- hpi_crime_clean %>%
-  mutate(VCR = (Violent.Crimes/Population)) 
+  mutate(VCR = (Violent.Crimes/Population)) %>%
+  na.omit()
 
 plotOne <- ggplot(data = plotOnedata) + 
   geom_point(mapping = aes(x = index_nsa, y = VCR)) +
@@ -13,3 +14,4 @@ plotOne <- ggplot(data = plotOnedata) +
   )
 
 
+??divide
