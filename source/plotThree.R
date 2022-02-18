@@ -9,7 +9,7 @@ plotThreeData <- hpi_crime_clean %>%
     TRUE ~ NA_character_
   )) %>%
   select(HPI_group, Violent.Crimes)
-
+x
 View(plotThreeData)
 
 
