@@ -1,11 +1,12 @@
 --- 
 title: "**Safe n' Sound**"
-author: "**Suraj Gangaram (_sgang624@uw.edu), Sumaya Mohamud (smoham2@uw.edu), Victoria Mulugeta (vmulu1@uw.edu), Duy Nguyen (dnh7@uw.edu), Mike Ramsay (mramsay2@uw.edu)**"
+author: "Suraj Gangaram (_sgang624@uw.edu), Sumaya Mohamud (smoham2@uw.edu), Victoria Mulugeta (vmulu1@uw.edu), Duy Nguyen (dnh7@uw.edu), Mike Ramsay (mramsay2@uw.edu)"
 affiliation: "INFO-201: Technical Foundations of Informatics - The Information School - University of Washington"
 date: "Winter 2022"
+output: html_document
+---
 
-
-##**Abstract**
+## **Abstract**
 **Our main question** is regarding _neighborhood safety_ and how much of a factor _socioeconomic status_ has on the **safety within a neighborhood**. **This question is of importance** because many communities do not have the proper representation and police protection, they are adversely affected by crime and city negligence as a result. **To address the question**, we will analyze datasets of crime rates in both higher and lower income neighborhoods in order to determine any associations between a neighborhood’s socioeconomic status and level of crime (measured in rates).
 
 ## **Keywords:** 
@@ -27,8 +28,7 @@ The project we are hoping to construct with our topic of neighborhood safety, is
 ## **References**
 
 
-output: html_document
----
+
 
 ```{r setup, include=FALSE}
 knitr::opts_knit$set(root.dir = '../')
