@@ -1,28 +1,46 @@
----
-title: "Your Project Title"
-author: "Suraj Gangaram, Sumaya Mohamud, Victoria Mulugeta, Duy Nguyen, Mike Ramsay sgang624@uw.edu, smoham2@uw.edu, vmulu1@uw.edu, dnh7@uw.edu, mramsay2@uw.edu"
-authors: "Suraj Gangaram, Sumaya Mohamud, Victoria Mulugeta, Duy Nguyen, Mike Ramsay sgang624@uw.edu, smoham2@uw.edu, vmulu1@uw.edu, dnh7@uw.edu, mramsay2@uw.edu"
-Date: "2/18/2022"
+--- 
+title: "**Safe n' Sound**"
+author: "**Suraj Gangaram, Sumaya Mohamud, Victoria Mulugeta, Duy Nguyen, Mike Ramsay** _sgang624@uw.edu, smoham2@uw.edu, vmulu1@uw.edu, dnh7@uw.edu, mramsay2@uw.edu_"
+affiliation: "INFO-201: Technical Foundations of Informatics - The Information School - University of Washington"
+date: "Winter 2022"
+
+
+## **Abstract**
+**Our main question** is regarding _neighborhood safety_ and how much of a factor _socioeconomic status_ has on the **safety within a neighborhood**. **This question is of importance** because many communities do not have the proper representation and police protection, they are adversely affected by crime and city negligence as a result. **To address the question**, we will analyze datasets of crime rates in both higher and lower income neighborhoods in order to determine any associations between a neighborhood’s socioeconomic status and level of crime (measured in rates).
+
+## **Keywords:** 
+Crime, Safety, Low-Income, Neighborhood, Economic-Differences.
+
+## **Introduction**
+The project we are hoping to construct with our topic of neighborhood safety, is bringing attention to the **lack** of safety in lower-income neighborhoods. Through _analyzing_ different neighborhoods crime and safety data in relation to the socioeconomic incomes of the families in those neighborhoods we hope to raise attention to the discrepancies between the amount of police and crime protection low income neighborhoods receive in comparison to higher income neighborhoods.  With the results gathered from this project, we hope to provide useful insight for those representing lower income neighborhoods and incentive to bring about change, through implementing new legislations and bills to ensure that those with low incomes feel safe and are protected from crimes within their neighborhoods. Additionally, we hope that this project will spark interest in others to also research the differences in crime and protection and continue to provide more data to implement changes to address these inequities.
+
+## **Design Situation**
+
+  
+## **Research Questions**
+
+
+## **The Dataset**
+## **Expected Implications**
+## **Limitations**
+## **Acknowledgements**
+## **References**
+
+
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = '../')
 ```
 
-## What is this file for?
+## **Summary Information**
 
-* This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis.
-
-* Please see Canvas for more details.
-
-## ACCESSING THE /source DIRECTORY
 ### Example 1: Source some code and run a function
 ```{r, echo = FALSE, include = FALSE}
 # Example 1: Note relative path, which can be read: Up one
 # directory(..), down into source (/source), and 
 # then "source" an R file (data_access.R)\
-setwd("../")
 source("source/data_access.R")
 ```
 
@@ -50,21 +68,6 @@ major_crimes <- summary_info$major_crime
 ```{r Table, echo = FALSE}
 # Example 1: This function was "sourced" above
 knitr::kable(table)
-```
-
-Hope you have a good day!! 
-
-## ABOUT THIS FILE: 
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-
-## Including Plots
-
-You can also embed plots, for example:
-
 ```{r plotOne, echo=FALSE}
 plot(plotOne)
 ```
@@ -73,4 +76,12 @@ plot(plotOne)
 plot(plotTwo)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```
+
+Hope you have a good day!! 
+
+
+
+## Including Plots
+
+
