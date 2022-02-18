@@ -68,10 +68,6 @@ Expected Implications from a low-income neighborhood where crime increases with 
 ## **Limitations**
 Some limitations that we might need to consider are the lack of crime reports for certain areas and how quantifiable of certain crime reports. Some neighborhoods may not have full records of crime reports, so we would have to either omit or make those data not available (N/A) to exclude them from any aggregate calculations. Furthermore, some data on crime might not be fully quantifiable, so we would have to discuss as a group which data we would have to prioritize or outright omit for the sake of our analysis. Moreover, data on crime can be self-reported, meaning that data would be inconsistent and not standardized, so we need to be careful watching out for such confounding variables before we move forward with our analysis.[^4]
 
-## **Acknowledgements**
-
-
-
 
 ```{r setup, include=FALSE}
 knitr::opts_knit$set(root.dir = '../')
@@ -98,7 +94,7 @@ num_locations <- summary_info$num_city_state
 major_crimes <- summary_info$major_crime
 ```
 
-#This is how you show variable values in the markdown
+This is how you show variable values in the markdown
 `r observations`
 `r features`
 `r min_hpi_value`
@@ -107,8 +103,8 @@ major_crimes <- summary_info$major_crime
 `r num_locations`
 `r major_crimes`
 
-### Example 2: Initialize a variable and then use it
-```{r Table, echo = FALSE, message=FALSE, results='hide'}
+### 
+```{r Table, echo = FALSE, message=FALSE}
 # Example 1: This function was "sourced" above
 knitr::kable(table)
 ```
