@@ -11,7 +11,7 @@ plotFourDataHigh <- hpi_crime_clean %>%
   group_by(Year) %>%
   select(Year, Violent.Crimes)
 
-plotLow <- ggplot(data = plotFourData) + 
+plotLow <- ggplot(data = plotFourDataLow) + 
   geom_col(mapping = aes(x = Year, y = Violent.Crimes)) +
   labs(
     title = "Violent Crimes by Year (for HPI<150)",
@@ -19,7 +19,7 @@ plotLow <- ggplot(data = plotFourData) +
     y = "Violent Crime "
   ) 
 
-plotHigh <- ggplot(data = plotFourData) + 
+plotHigh <- ggplot(data = plotFourDataHigh) + 
   geom_col(mapping = aes(x = Year, y = Violent.Crimes)) +
   labs(
     title = "Violent Crimes by Year (for HPI>150)",
