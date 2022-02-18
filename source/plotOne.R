@@ -1,5 +1,5 @@
 source("source/cleanData.R")
-library(plotly)
+library("plotly")
 plotOnedata <- hpi_crime_clean %>%
   mutate(VCR = (Violent.Crimes/Population)) 
 

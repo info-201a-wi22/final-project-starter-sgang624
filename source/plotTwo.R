@@ -1,5 +1,6 @@
 source("source/cleanData.r")
-library(plotly)
+library("plotly")
+library("ggplot")
 crime_type <- c('Homicides', 'Rapes', 'Assaults', 'Robberies')
 
 plotTwoData <- hpi_crime_clean %>% 
