@@ -68,18 +68,12 @@ Expected Implications from a low-income neighborhood where crime increases with 
 ## **Limitations**
 Some limitations that we might need to consider are the lack of crime reports for certain areas and how quantifiable of certain crime reports. Some neighborhoods may not have full records of crime reports, so we would have to either omit or make those data not available (N/A) to exclude them from any aggregate calculations. Furthermore, some data on crime might not be fully quantifiable, so we would have to discuss as a group which data we would have to prioritize or outright omit for the sake of our analysis. Moreover, data on crime can be self-reported, meaning that data would be inconsistent and not standardized, so we need to be careful watching out for such confounding variables before we move forward with our analysis.[^4]
 
-## **Acknowledgements**
-
-
-
 
 ```{r setup, include=FALSE}
 knitr::opts_knit$set(root.dir = '../')
 ```
 
 ## **Summary Information**
-
-### Example 1: Source some code and run a function
 ```{r, echo = FALSE, include = FALSE}
 # Example 1: Note relative path, which can be read: Up one
 # directory(..), down into source (/source), and 
@@ -98,7 +92,7 @@ num_locations <- summary_info$num_city_state
 major_crimes <- summary_info$major_crime
 ```
 
-#This is how you show variable values in the markdown
+This is how you show variable values in the markdown
 `r observations`
 `r features`
 `r min_hpi_value`
@@ -107,18 +101,52 @@ major_crimes <- summary_info$major_crime
 `r num_locations`
 `r major_crimes`
 
-### Example 2: Initialize a variable and then use it
-```{r Table, echo = FALSE, message=FALSE, results='hide'}
+## **Table for Total Major Crimes by City**
+```{r Table, echo = FALSE, message=FALSE}
 # Example 1: This function was "sourced" above
 knitr::kable(table)
 ```
-```{r plotOne, echo=FALSE, message=FALSE, results='hide'}
+
+## **Plot One**
+
+**Purpose**:
+
+This is plot is a scatter plot that shows the relationship between HPI Values and The Violent Crime Rate associated with this values.
+
+**Insights**:
+
+This plot was made to answer the research question of **how safe are the neighborhoods in low-income area**. 
+It is clear from this plot, neighborhoods with HPI values higher than **200** experience way less crime compared to neighborhoods under **200**.
+From HPI values between **200** to **100**, there is a sharp increase in crime rate. From HPI values between **100** to **50**, there is a sharp decrease in crime rate. From HPI values from **50** to **0**, there is slight decrease in crime rate. From this plot, we conclude that less crime in high-income areas i.e., neighborhoods with **HPI values higher than 200** and more crime in low-income area i.e., neighborhoods with **HPI values less than 200**. This mean low-income areas are much dangerous than high income areas.
+
+```{r plotOne, echo=FALSE}
 plot(plotOne)
 ```
+
 
 ```{r plotTwo, echo=FALSE, message=FALSE, results='hide'}
 plot(plotTwo)
 ```
+
+## **Plot Three**
+
+**Purpose**:
+
+The purpose of this plot is to answer the question regarding the difference
+between crime rates in low income and high income areas. The box plots are included 
+because they delineates the spread of the data (percentage of crime) across each
+of the 4 categories: high, low, medium, and N/A.
+
+**Insights**:
+
+There are no outlier in the high category, and it has an IQR of 0.74. 
+There are several outliers in the low category, and it has an IQR of 0.94,
+indicating it has a relatively high spread from the mean as opposed to other 
+categories. There are some outliers in the medium category,and it has an IQR 
+of 0.63. Overall, the box plots show that low income areas have the highest 
+percentage of crime, and the data extend beyond the whiskers of the plot (meaning
+that there are outliers). It's a fair assumption to make that low income 
+areas have a higher percentage of crime as opposed to higher income areas.
 
 ```{r plotThree, echo=FALSE, message=FALSE, results='hide'}
 plot(plotThree)
