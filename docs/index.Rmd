@@ -124,10 +124,18 @@ plot(plotTwo)
 plot(plotThree)
 ```
 
+## **Plot Four**
+
+**Purpose**:
+We included this set of charts to compare how violent crime numbers across the US have changed from 1975 to 2015 and how this compares between high and low income groups. We decided that splitting this into two graphs would best display this data comparison.
+
+**Insights**: 
+Looking at the y-axises on both graphs, it’s clear that there is a higher number of violent crimes associated with the lower Housing Price Index value, or HPI, than the higher values, which is what we expected in our research question. The drop off in violent crime rates around 2000 for the lower HPI chart was something we didn’t expect. We also noticed that higher HPI values seem to skew more towards recent years. This is probably due to changes, mainly increases, in housing prices and neighborhoods which ties into some of the issues surrounding gentrification that we touched on earlier in our report.
 ```{r plotFour, echo=FALSE, message=FALSE, results='hide'}
 plot(plotLow)
 plot(plotHigh)
 ```
+
 
 ## **References**
 [^1]: [Reports by U.S. Department of Justice on Households Poverty & Non-fatal violent victimization](https://bjs.ojp.gov/content/pub/pdf/hpnvv0812.pdf)
