@@ -21,9 +21,11 @@ The **goal** of this project is to study the _connection_ between the income lev
 
 ### Human-Values: 
 The two human-values in our topic are **Equity** and **Safety**. **Equity** is the value of _fair treatment and justice among all people_. In this value, it must be _**acknowledged**_ not all people have access to equal resources and opportunities, and we must work together to eliminate inequalities and bring everyone to the same level of equality. This leads to **Safety** as a value. As humans, we all want to be safe. Having equity for everyone leads to the safety of all people as motivations for committing crimes gets eliminated[^2].
-### Direct Stakeholders: :eyes:
+
+### Direct Stakeholders: 
 Some of the direct stakeholders are **low-income community leaders, researchers, journalists, students, and activists**. These individuals are those who will be directly advocating and reporting these inequalities present in the data. Whether they will bring good or harm to these low-income communities will _depend_ on the stakeholders and the values they hold. Still, the ability to understand statistical analysis is required to effectively utilize this project.
-### Indirect Stakeholders: :busts_in_silhouette:
+
+### Indirect Stakeholders: 
 Some of the indirect stakeholders are city council members, state representatives, and news readers/watchers. They are the people that arguments, bills, and legislatures constructed from this project are being presented to. They are people that hold power in making decisions that can make the world more equitable and safer for minoritized and marginalized groups.
 
 ### Benefits: 
@@ -92,14 +94,9 @@ num_locations <- summary_info$num_city_state
 major_crimes <- summary_info$major_crime
 ```
 
-This is how you show variable values in the markdown
-`r observations`
-`r features`
-`r min_hpi_value`
-`r max_hpi_value`
-`r mean_hpi_value`
-`r num_locations`
-`r major_crimes`
+
+The summary information we computed intended to provide the main figures that our data presented before we filtered it out to create our **table summary**. There were **`r observations`** rows and **`r features`** columns of information, the *minimum* house price index is **`r round(min_hpi_value)`**, and the *maximum* house price index is **`r round(max_hpi_value)`**, with the *mean* being **`r round(mean_hpi_value)`**. Additionally, there was **`r round(num_locations)`** unique City, State values reported, and the major crimes are **`r major_crimes`**. This information is extremely valuable as we are able to see what the highest totals for each major crime are, as well as the house price indexes where these crimes occurred, to see if there is any relation between crime level and house price index. 
+
 
 ## **Table for Total Major Crimes by City**
 ```{r Table, echo = FALSE, message=FALSE}
@@ -123,6 +120,15 @@ From HPI values between **200** to **100**, there is a sharp increase in crime r
 plot(plotOne)
 ```
 
+## **Plot Two**
+
+**Purpose**:
+
+This plot displays assaults, homicides, rapes, and robberies as a percentage out of the total number of violent crimes for areas with a Housing Price Index of 110 or lower. We thought that displaying it in the form of a stacked bar chart with a key was best for displaying multiple variables that make up a whole.
+
+**Insights**:
+
+Looking at this plot, we can see that assaults and robberies make up the vast majority of total violent crimes for lower HPI values. Meanwhile, rapes and homicides make up significantly less of the total violent crimes. We were a little shocked by how small a proportion that homicides make out of the total proportion. So this visualization makes it pretty clear what types of violent crimes occur the most often in low-income areas. 
 
 ```{r plotTwo, echo=FALSE, message=FALSE, results='hide'}
 plot(plotTwo)
@@ -155,9 +161,11 @@ plot(plotThree)
 ## **Plot Four**
 
 **Purpose**:
+
 We included this set of charts to compare how violent crime numbers across the US have changed from 1975 to 2015 and how this compares between high and low income groups. We decided that splitting this into two graphs would best display this data comparison.
 
 **Insights**: 
+
 Looking at the y-axises on both graphs, it’s clear that there is a higher number of violent crimes associated with the lower Housing Price Index value, or HPI, than the higher values, which is what we expected in our research question. The drop off in violent crime rates around 2000 for the lower HPI chart was something we didn’t expect. We also noticed that higher HPI values seem to skew more towards recent years. This is probably due to changes, mainly increases, in housing prices and neighborhoods which ties into some of the issues surrounding gentrification that we touched on earlier in our report.
 ```{r plotFour, echo=FALSE, message=FALSE, results='hide'}
 plot(plotLow)
