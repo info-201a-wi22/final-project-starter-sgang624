@@ -7,10 +7,6 @@
 # repository is stored.
 #----------------------------------------------------------------------------#
 library(tidyverse)
-<<<<<<< HEAD
-setwd("~/Desktop/INFO201-Winter2022/final-project-starter-sgang624")
-=======
->>>>>>> 5973fce78dd30ff1c44e538cb032438b3ce9493b
 hpi_crime_raw <- read.csv("data/HPI_CrimeRate.csv")
 clean_data <- function(data){
   clean <- data %>% 
