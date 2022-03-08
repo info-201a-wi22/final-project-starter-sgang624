@@ -17,3 +17,4 @@ plotTwo <- ggplot(plotTwoData, aes(x="", y = round(percentage, 2), fill=group)) 
   xlab("Violet Crimes For HPI under 110")
   ylab("Percentage of Major Crime")
 
+plotly(plotTwo)
