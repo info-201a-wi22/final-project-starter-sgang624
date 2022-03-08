@@ -11,5 +11,8 @@ server <- function(input, output) {
     return (createPlot(hpi_crime_clean, input$pointAlpha, 
                                input$pointShape, input$lineColor))
   )
+  output$plotTwo <- renderPlotly(
+    return (createStackedBar(hpi_crime_clean, input$hpiValuePlotTwo))
+  )
 }
   
