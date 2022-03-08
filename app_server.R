@@ -14,5 +14,8 @@ server <- function(input, output) {
   output$plotTwo <- renderPlotly(
     return (createStackedBar(hpi_crime_clean, input$hpiValuePlotTwo))
   )
+  output$plotThree <- renderPlotly(
+    return (createBoxPlot(hpi_crime_clean, input$HPI_group))
+  )
 }
   
