@@ -76,6 +76,25 @@ interactive_page_three <- tabPanel(
   )
 )
 
+interactive_page_three <- tabPanel(
+  "Plot Four",
+  titlePanel('Violent Crimes by Year for HPI Values'),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput(
+        inputId = "HPI_height",
+        label = "HPI Values",
+        choices = list("Above 150" = "high", 
+                       "Under 150" = "low")
+      ), 
+    ),
+    
+    mainPanel(
+      plotlyOutput("plotFour"),
+    ) 
+  )
+)
+
 summary_takeaways_page <- tabPanel(
   "Summary Takeaways",
   titlePanel("Summary Takeaways"),

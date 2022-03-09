@@ -18,5 +18,8 @@ server <- function(input, output) {
   output$plotThree <- renderPlotly(
     return (createBoxPlot(hpi_crime_clean, input$HPI_group))
   )
+  output$plotFour <- renderPlotly(
+    return (createHistorgram(hpi_crime_clean, input$HPI_height))
+  )
 }
   
