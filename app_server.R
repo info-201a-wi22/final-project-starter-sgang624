@@ -8,6 +8,7 @@ source("source/cleanData.R")
 source("source/plotOne.R")
 source("source/plotTwo.R")
 source("source/plotThree.R")
+source("source/plotFour.R")
 server <- function(input, output) {
   output$plotOne <- renderPlotly(
     return (createPlot(hpi_crime_clean, input$crimeGroup))
