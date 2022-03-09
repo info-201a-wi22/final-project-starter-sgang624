@@ -131,6 +131,7 @@ interactive_page_four <- tabPanel(
     ),
     mainPanel(
       plotlyOutput("plotFour"),
+      p("This plot looks at total violent crime numbers in the US, but it is split up displaying high and low income groups in separate graphs that can be controlled with the widget. We wanted this plot to display the differences in crime numbers across low income and high income areas, which it does a good job")
     ) 
   )
 )
