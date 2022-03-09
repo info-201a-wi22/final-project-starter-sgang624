@@ -77,9 +77,10 @@ interactive_page_three <- tabPanel(
       selectInput(
         inputId = "HPI_group",
         label = "Choose HPI Group to Display",
-        choices = list("High" = "HPI_group", 
-                       "Medium" = "",
-                       "Low" = "")
+        choices = list("High" = "High", 
+                       "Medium" = "Medium",
+                       "Low" = "Low",
+                       "All" = "All")
       ), 
     ),
     
