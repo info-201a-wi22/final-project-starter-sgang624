@@ -76,7 +76,7 @@ interactive_page_three <- tabPanel(
   )
 )
 
-interactive_page_three <- tabPanel(
+interactive_page_four <- tabPanel(
   "Plot Four",
   titlePanel('Violent Crimes by Year for HPI Values'),
   sidebarLayout(
@@ -122,6 +122,7 @@ ui <- navbarPage(
   interactive_page_one, 
   interactive_page_two,
   interactive_page_three,
+  interactive_page_four,
   summary_takeaways_page,
   report_page
 )
