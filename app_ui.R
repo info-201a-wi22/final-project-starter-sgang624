@@ -8,7 +8,32 @@ library(knitr)
 intro_page <- tabPanel(
   "Introduction",
   titlePanel("Introduction"),
-  p("Intro paragraph")
+  HTML('<center><img src="watch.jpeg" style="height:600px;"></center>'),
+  h3("\n"),
+  h3("Our topic is on neighborhood safety. We want to raise awareness on the 
+  inefficiency of safeness for neighborhoods with lower income and funding"),
+  h3("\n"),
+  HTML('<center><img src="imrs.jpeg" style="height:600px;"></center>'),
+  h3("\n"),
+  h3("Through analyzing the crime and safety data of various neighborhoods 
+  in relation to the socioeconomic incomes of the families in those 
+  neighborhoods, we hope to raise awareness to the discrepancies between 
+  the amount of police and crime protection low income neighborhoods receive 
+  in comparison to higher income neighborhoods."), 
+  h3("\n"),
+  HTML('<center><img src="hill.jpeg" style="height:600px;"></center>'),
+  h3("\n"),
+  h3("With the results gathered 
+  from this project, we hope to provide useful insight for those representing 
+  lower income neighborhoods and incentive to bring about change, through 
+  implementing new legislation and bills to ensure that. Those in lower incomes 
+  feel safe and are protected from crimes within their neighborhoods."),
+  h3("\n"),
+  HTML('<center><img src="people.jpeg" style="height:600px;"></center>'),
+  h3("\n"),
+  h3("Additionally, we hope that this project will spark interest in others to also 
+  research the differences in crime and safety protection and continue to 
+  provide more data to implement changes to address these inequities.")
 )
 
 interactive_page_one <- tabPanel(
