@@ -6,6 +6,8 @@ library(knitr)
 
 source("source/cleanData.R")
 source("source/plotOne.R")
+source("source/plotTwo.R")
+source("source/plotThree.R")
 server <- function(input, output) {
   output$plotOne <- renderPlotly(
     return (createPlot(hpi_crime_clean, input$pointAlpha, 
