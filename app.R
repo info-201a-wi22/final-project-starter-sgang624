@@ -4,6 +4,7 @@ library(ggplot2)
 library(plotly)
 library(knitr)
 library('tidyverse')
+library("stringr")
 
 source("app_ui.R")
 source("app_server.R")

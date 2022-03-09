@@ -10,8 +10,7 @@ source("source/plotTwo.R")
 source("source/plotThree.R")
 server <- function(input, output) {
   output$plotOne <- renderPlotly(
-    return (createPlot(hpi_crime_clean, input$pointAlpha, 
-                               input$pointShape, input$lineColor))
+    return (createPlot(hpi_crime_clean, input$crimeGroup))
   )
   output$plotTwo <- renderPlotly(
     return (createStackedBar(hpi_crime_clean, input$hpiValuePlotTwo))
