@@ -10,12 +10,12 @@ intro_page <- tabPanel(
   titlePanel("Introduction"),
   HTML('<center><img src="watch.jpeg" style="height:600px;"></center>'),
   h3("\n"),
-  h3("Our topic is on neighborhood safety. We want to raise awareness on the 
-  inefficiency of safeness for neighborhoods with lower income and funding"),
+  p("Our topic is on neighborhood safety. We want to raise awareness on the 
+  inefficiency of safeness for neighborhoods with lower income and funding."),
   h3("\n"),
   HTML('<center><img src="imrs.jpeg" style="height:600px;"></center>'),
   h3("\n"),
-  h3("Through analyzing the crime and safety data of various neighborhoods 
+  p("Through analyzing the crime and safety data of various neighborhoods 
   in relation to the socioeconomic incomes of the families in those 
   neighborhoods, we hope to raise awareness to the discrepancies between 
   the amount of police and crime protection low income neighborhoods receive 
@@ -23,7 +23,7 @@ intro_page <- tabPanel(
   h3("\n"),
   HTML('<center><img src="hill.jpeg" style="height:600px;"></center>'),
   h3("\n"),
-  h3("With the results gathered 
+  p("With the results gathered 
   from this project, we hope to provide useful insight for those representing 
   lower income neighborhoods and incentive to bring about change, through 
   implementing new legislation and bills to ensure that. Those in lower incomes 
@@ -31,7 +31,7 @@ intro_page <- tabPanel(
   h3("\n"),
   HTML('<center><img src="people.jpeg" style="height:600px;"></center>'),
   h3("\n"),
-  h3("Additionally, we hope that this project will spark interest in others to also 
+  p("Additionally, we hope that this project will spark interest in others to also 
   research the differences in crime and safety protection and continue to 
   provide more data to implement changes to address these inequities.")
 )
