@@ -241,15 +241,62 @@ Some of the crimes or variables that were recorded in this dataset are homicides
 The data was collected from another Kaggle dataset, created by the Marshall Project, that measures crime rates across the United States from 1975 to 2015 and the FHFA house prices index. The Marshall Project, created in 2014, is a nonprofit, online journalism organization with a focus on issues related to criminal justice in the United States. It has been funded by donations and grants from various individuals and foundations. The FHFA is a federal agency in the United States that regulates mortgages. The house prices index is a measure of the movement of single-family house prices.
 
 This data is created from the merging of the Housing-Index dataset and Crime in Context dataset. While the merged dataset is questionable in its validation and security. The dataset that should be composed of this merged dataset is very credible and secure. We are considering merging the two sourced dataset ourselves to ensure the validity, security, and credibility of the data we are working with."),
-  p(tags$a(href="https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index-Datasets.aspx", "The Housing-Index dataset"), "is verified by the United States Federal Housing Finance Agency or FHFA. The dataset is collected by reviewing mortgage transactions on single family properties since January 1975. Each transaction is either purchased or secured by mortgage loan companies Freddie Mac or Fannie Mae. This dataset was last updated on November 29, 2020. Considering this dataset was reviewed by a government agency and two mortgage loan companies further secured it, we believe this dataset is very trustworthy and credible."),
-  p(tags$a(href="https://www.kaggle.com/marshallproject/crime-rates", "The Crime In Context dataset"), "was created by Gabriel Dance, Tom Meagher, and Emily Hopkin of the Marshall Project. They compiled this dataset from the four major crimes data the FBI classifies as violent. This includes homicide, rape, robbery and assault. This dataset includes 68 police jurisdictions with populations over 250,000 or greater. Only 1975 - 2014 data came directly from the FBI. This part of the data came from the FBI Uniform Crime Reporting program's \"Offenses Known and Clearances by Arrest\" database. The 2015 data was obtained from directly contacting the police agency. Only 61 police jurisdictions data was collected for 2015. The analysis for the crime rate calculated is based on a per 100,000 residents in a police jurisdiction.The 2015 crime rate analysis is based on 2014 population estimate. Considering most of this dataset came from the FBI and parts of it also came directly from police institutions, we believe that the source of the data is very secure and trustworthy. As for the analysis, the depth in which the Marshall project reveals their methodology and also directly naming the people working on the analysis make the analysis quite credible and trustworthy."),
-  p("We obtained the housing price index and crime rate dataset from Kaggle. It was created by merging the two datasets from The Marshall Project and FHFA, listed above. They were merged together by Kaggle contributor, SandeepRamesh, with the goal of uncovering a correlation between crime rate and housing price index."),
+  p(tags$a(href="https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index-Datasets.aspx", 
+           "The Housing-Index dataset"), "is verified by the United States 
+    Federal Housing Finance Agency or FHFA. The dataset is collected by 
+    reviewing mortgage transactions on single family properties since 
+    January 1975. Each transaction is either purchased or secured by mortgage 
+    loan companies Freddie Mac or Fannie Mae. This dataset was last updated on 
+    November 29, 2020. Considering this dataset was reviewed by a government 
+    agency and two mortgage loan companies further secured it, we believe this 
+    dataset is very trustworthy and credible."),
+  p(tags$a(href="https://www.kaggle.com/marshallproject/crime-rates", "The Crime In Context dataset"), 
+    "was created by Gabriel Dance, Tom Meagher, and Emily Hopkin of 
+    the Marshall Project. They compiled this dataset from the four major crimes 
+    data the FBI classifies as violent. This includes homicide, rape, robbery 
+    and assault. This dataset includes 68 police jurisdictions with populations 
+    over 250,000 or greater. Only 1975 - 2014 data came directly from the FBI. 
+    This part of the data came from the FBI Uniform Crime Reporting program's 
+    \"Offenses Known and Clearances by Arrest\" database. The 2015 data was 
+    obtained from directly contacting the police agency. Only 61 police 
+    jurisdictions data was collected for 2015. The analysis for the crime 
+    rate calculated is based on a per 100,000 residents in a police 
+    jurisdiction.The 2015 crime rate analysis is based on 2014 population 
+    estimate. Considering most of this dataset came from the FBI and parts of 
+    it also came directly from police institutions, we believe that the source 
+    of the data is very secure and trustworthy. As for the analysis, 
+    the depth in which the Marshall project reveals their methodology and also 
+    directly naming the people working on the analysis make the analysis quite 
+    credible and trustworthy."),
+  p("We obtained the housing price index and crime rate dataset from Kaggle. 
+    It was created by merging the two datasets from The Marshall Project and FHFA, 
+    listed above. They were merged together by Kaggle contributor, SandeepRamesh, 
+    with the goal of uncovering a correlation between crime rate and housing price index."),
   h3("Findings"),
   h3("Discussion"),
-  h3("Conclusion")
+  h3("Conclusion"),
+  p("We hope that our data shows that lower-income neighborhoods can raise 
+    awareness of the discrepancies between the amount of police and crime 
+    protection towards low-income neighborhoods to receive in comparison to 
+    higher-income neighborhoods. We hope that all neighborhoods become equal 
+    no matter their status and are safe and protected from crimes within their 
+    neighborhoods. The data we've received is a very credible source leaving 
+    crime rates continuously rising mainly targeting lower-income neighborhoods.
+    Wanting To be safe in your neighborhood shouldn't be something that has 
+    to be debated over. These are humans who want a better lifestyle without 
+    being afraid to live in their own homes. "),
+  h3("Citations"),
+  p(tags$a(href = "https://bjs.ojp.gov/content/pub/pdf/hpnvv0812.pdf", 
+         "Reports by U.S. Department of Justice on Households Poverty 
+         & Non-fatal violent victimization")),
+  p(tags$a(href = "https://blogs.lse.ac.uk/usappblog/2016/07/08/how-neighborhood-inequality-leads-to-higher-crime-rates/",
+         "How neighborhood inequality leads to higher crime rates"),
+  tags$a(href="https://www.pnas.org/content/112/16/4994#:~:text=The%20hypothesis%20of%20neighborhood%20stigma,in%20their%20interactions%20with%20strangers",
+         "Effect of neighborhood stigma on economic transactions")),
+  p(tags$a(href = "https://www.datacoalition.org/improving-crime-data-to-make-better-policy/",
+         "Improving Crime Data to Make Better Policy"))
 )
 
-p()
 
 # ui <- navbarPage(
 #   "Safe n' Sound",
