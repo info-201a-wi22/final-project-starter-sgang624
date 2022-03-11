@@ -152,7 +152,32 @@ interactive_page_four <- tabPanel(
 summary_takeaways_page <- tabPanel(
   "Summary Takeaways",
   titlePanel("Summary Takeaways"),
-  p("4 Summary takeaways")
+  p("4 Summary takeaways"),
+  h2("Plot One"),
+  p("Evidently from this graph, it is apparent that the number and frequency of crimes increases, 
+    as house price index increases. For violent crimes, there is a peak in the data for the rate at which
+    these crimes occur when the housing price index value is roughly 100 which is on the lower side of housing
+    price indexes. For Homicides, the crime rate frequency also was very prevalent when the hpi was lower, with a peak occuring
+    again at roughly 100, and there being much more points when the hpi was 200 and below. For Assault crimes, when the hpi was roughly 108 there was a peak in 
+    the plot, as well as more prevelance in assault crimes when the hpi was 200 and below. For robberies, there was a peak in the data 
+    when the hpi was about 105, and again, these crimes occured much more when the hpi was 200 and below. Finally, for rapes, there wasnt necessarily a 
+    peak in the data, but there was much more prevalance when the hpi was 200 and below, with extremely frequent occurances when the hpi was roughly 100."),
+  
+  h2("Plot Two"),
+  p("When comparing the lowest and highest hpi values represented in this widget, which are 110 and 400, the percentage of assaults was 48.42% and 51.92%,
+    the percentage of homicides was 1.59% and 1.42%, the percentage of rapes was 4.48% and  4.84%, for robberies the percentages were 45.52% and 41.82%. These
+    values were very surprising to me, because when looking at the data from a different viewpoint on the frequencies that they occur in lower hpi neighborhoods v.s. higher
+    hpi neighborhoods, there seems to be a very apparent gap between the rates, but the percentage of crimes occuring in these neighborhoods stays relatively constant and similar regardless of 
+    house values. This is something that we were not expecting to see in our data, as we thought the percentages of different types of crimes would be vastly different depending on the neigborhood 
+    house values."),
+  
+  h2("Plot Three"),
+  p("When comparing the crime percentages for high, medium, and low hpi groups, it was evident that the median crime percentage rate was highest in the low income neighborhoods. The median crime percentage for low income neighborhoods was roughly
+    1.18%, 0.96% for medium, and 0.74% for high hpi, the change in percentages depending on hpi makes it very apparent that there are more crimes that occur in lower income hpi neighborhoods."),
+    
+  h2("Plot Four"),
+  p("When looking at the frequency at violent crimes for lower hpi neighborhoods, which are hpi's under 150, the frequency of violent crimes was much higher before the 2000s, with the peak occuring in 1991. 
+    For hpi's greater than 150, the frequency of violent crimes was relatively low, up until the mid 2000s, with the highest amount of violent crimes occuring in 2006.")
 )
 
 report_page <- tabPanel(
