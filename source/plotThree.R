@@ -1,4 +1,4 @@
-source("source/cleanData.r")
+source("source/cleanData.R")
 library("plotly")
 
 
@@ -26,7 +26,6 @@ createBoxPlot <- function(data, selectedHPIGroup) {
   if(str_detect(selectedHPIGroup, "All")) {
     HPI <- plotThreeData$HPI_group
   }
-  View(fillColor)
   plotThree <- ggplot(data = plotThreeData) +
     geom_boxplot(aes(x= .data$HPI_group, y = crime_percentage, fill = HPI)) +
     labs(

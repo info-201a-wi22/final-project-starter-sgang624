@@ -1,4 +1,4 @@
-source("source/cleanData.r")
+source("source/cleanData.R")
 library("plotly")
 
 createStackedBar <- function(data, indexValue) {
