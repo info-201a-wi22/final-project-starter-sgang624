@@ -152,7 +152,6 @@ interactive_page_four <- tabPanel(
 summary_takeaways_page <- tabPanel(
   "Summary Takeaways",
   titlePanel("Summary Takeaways"),
-  p("4 Summary takeaways"),
   h2("Plot One"),
   p("Evidently from this graph, it is apparent that the number and frequency of crimes increases, 
     as house price index increases. For violent crimes, there is a peak in the data for the rate at which
@@ -251,7 +250,7 @@ report_page <- tabPanel(
     tags$li("What type of crimes are likely to occur in low-income areas?"),
     tags$li("What is the difference between crime rates in low-income 
             and high-income areas?"),
-    tags$li("hat crime is most prevalent in low-income and high-income 
+    tags$li("What crime is most prevalent in low-income and high-income 
             areas in recent years (1990-2015)?")
   ),
   p("We plan to address our first research questions by selecting the lower income communities and observing the amount of violent crimes that occur within them. Using the different types of crimes listed in the dataset, we can answer our second research question by determining which crimes are most likely to occur in low income areas. We can do this by comparing what proportion of the total violent crimes each one of them makes up in certain communities. We can answer our third research question by grouping the housing price index into different income levels and comparing the differences in crime rates between them. For our fourth question, we can answer it by grouping the dataset into high and low-income, and then further group them based on years. We can then compare the averages of different crime rates based on year and split the data into two graphs for high and low income areas to see the trend in crime rate."),
@@ -298,7 +297,52 @@ This data is created from the merging of the Housing-Index dataset and Crime in 
     listed above. They were merged together by Kaggle contributor, SandeepRamesh, 
     with the goal of uncovering a correlation between crime rate and housing price index."),
   h3("Findings"),
+  p("Q1: How much of an issue is neighborhood safety in low income areas?"),
+  p("From our plot one, we can see that neighborhoods with HPI values under 200 
+  experience way more violent crime compared to neighborhoods above HPI 200. 
+  Robberies, Rapes, and Homicides appears occurs at much higher rates in 
+  neighborhoods under 200 HPI. However, Assaults are more likely to happen in 
+  neighborhoods over 200 HPI. Overall, low-income neighborhoods experience way 
+  more violent crimes than high-income neighborhoods. This shows that safety is 
+  definitely an issue for low-income neighborhoods."), 
+  p("Q2: What type of crimes are likely to occur in low-income areas?"),
+  p("From our plot two, we can see that neighborhoods with HPI values under 200, we
+  can see that Assaults make up 52.89% of violent crimes. Robberies follow 
+  closely in second 40.96%. Rapes is in third with 4.77%, while Homicides is in
+  last with 1.39%. This indicates the order of the most common crime in 
+  low-income neighborhoods from most to least likely to happen are Assaults, 
+  Robberies, Rapes, and Homicides."),
+  p("Q3: What is the difference between crime rates in low-income and high-income areas?"), 
+  p("Our third research question is answered by plot three. This is the 
+  series of boxplots that displays the spread of the data or percentage of crime 
+  across each of the three categories: high, low, medium. It is apparent that 
+  there is a smaller spread across a lower crime percentage for the high HPI 
+  group. Meanwhile, the spread of crime percentages is a lot more spread out 
+  and is skewn more towards higher values for the lower HPI group. This tells 
+  us that lower neighborhoods with lower HPI or lower income neighborhoods have
+  a higher chance of experiencing more crime."), 
+  p("Q4: What crime is most prevalent in low-income and high-income areas in recent years (1990-2015)?"),
+  p("Plot four answers our fourth research question, being what crime was the most 
+  prevalent in low-income and high-income areas in recent years. It shows that 
+  there is a higher proportion of violent crimes in neighborhoods with a lower 
+  Housing Price Index. Although this graph does show some interesting patterns 
+  that we did not expect, like the drop-offs in numbers around 2000 for both HPI
+  ranges. This is most likely due to the way that HPI is calculated."),
   h3("Discussion"),
+  p("It is important to ensure that low-income neighborhoods are safe especially
+    since the instances of robberies and rapes are more associated with such low 
+    HPI areas. Furthermore, the spread of crime percentage rates overall is higher
+    for houses on the lower end of the HPI, meaning that lower income neighborhoods
+    see higher rates than houses in the middle or upper end of the HPI. And since 
+    crimes are proven to be more violent in neighborhoods with a lower HPI, change
+    has to happen imminently. Based on the data, safety is a paramount issue that 
+    needs to be addressed in lower income areas. City council members should go 
+    about tackling these issues in order to remove the stigma around low-income 
+    neighborhoods being unsafe. Neighborhoods such as the notorious “O’ Block” in 
+    Chicago catch such a bad reputation because of a lot of factors, especially
+    because of the fact that they are labeled as low income. Change has to happen 
+    at the grassroots level, involving city council members, protection agencies 
+    and citizens in order to bring about safer lower income neighborhoods."),
   h3("Conclusion"),
   p("We hope that our data shows that lower-income neighborhoods can raise 
     awareness of the discrepancies between the amount of police and crime 
@@ -315,23 +359,14 @@ This data is created from the merging of the Housing-Index dataset and Crime in 
          "Reports by U.S. Department of Justice on Households Poverty 
          & Non-fatal violent victimization")),
   p(tags$a(href = "https://blogs.lse.ac.uk/usappblog/2016/07/08/how-neighborhood-inequality-leads-to-higher-crime-rates/",
-         "How neighborhood inequality leads to higher crime rates"),
-  tags$a(href="https://www.pnas.org/content/112/16/4994#:~:text=The%20hypothesis%20of%20neighborhood%20stigma,in%20their%20interactions%20with%20strangers",
+         "How neighborhood inequality leads to higher crime rates")),
+  p(tags$a(href="https://www.pnas.org/content/112/16/4994#:~:text=The%20hypothesis%20of%20neighborhood%20stigma,in%20their%20interactions%20with%20strangers",
          "Effect of neighborhood stigma on economic transactions")),
   p(tags$a(href = "https://www.datacoalition.org/improving-crime-data-to-make-better-policy/",
          "Improving Crime Data to Make Better Policy"))
 )
 
 
-# ui <- navbarPage(
-#   "Safe n' Sound",
-#   intro_page,
-#   interactive_page_one,
-#   interactive_page_two,
-#   interactive_page_three,
-#   summary_takeaways_page, 
-#   report_page
-# )
 
 ui <- navbarPage(
   "Safe n' Sound",
